@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --color-primary: 66 133 244;
+  --color-primary-darker: 53, 106, 195;
+  --color-secondary: 137, 44, 220;
+  --color-secondary-darker: 110, 35, 176;
+  --color-dark: 48, 48, 48;
+  --color-black: 24, 24, 24;
+  --color-light: 248, 248, 248;
+  --color-white: 255, 255, 255;
+  --color-linear-gradient-from: 50, 53, 94;
+  --color-linear-gradient-to: 17, 14, 28;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(var(--color-linear-gradient-from)) 90vh, rgb(var(--color-linear-gradient-to))) !important;
+  color: rgb(var(--color-white));
+}
+
+#offcanvas-overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: linear-gradient(to bottom, rgb(var(--color-linear-gradient-from)) 70vh, rgb(var(--color-linear-gradient-to))) !important;
+  }
+}/*# sourceMappingURL=globals.css.map */

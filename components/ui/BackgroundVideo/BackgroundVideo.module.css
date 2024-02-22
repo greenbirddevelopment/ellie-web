@@ -1,0 +1,10 @@
+#container {
+  height: 90vh !important;
+  z-index: -1 !important;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    height: 70vh !important;
+  }
+}
