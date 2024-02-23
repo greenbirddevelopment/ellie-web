@@ -7,6 +7,8 @@ import Products from "@/components/products/Products";
 import BackgroundVideo from "@/components/ui/BackgroundVideo/BackgroundVideo";
 
 export default function Home({ icons, videos, partnerships }) {
+  console.log(icons);
+
   const headerIcon = icons.filter((icon) => icon.type === "header").at(0);
   const productIcons = icons.filter((icon) => icon.type === "product");
   const watermarkIcon = icons.filter((icon) => icon.type === "watermark").at(0);
@@ -35,14 +37,19 @@ export default function Home({ icons, videos, partnerships }) {
 }
 
 export async function getServerSideProps() {
-  const responseIcon = await fetch("http://35.157.165.146:8000/api/icons");
-  const responseVideo = await fetch("http://35.157.165.146:8000/api/videos");
-
-  const responsePartnership = await fetch(
-    "http://35.157.165.146:8000/api/partnerships/"
+  const responseIcon = await fetch(
+    "https://ellie-web-api-dev.elliesupport.com/api/icons"
   );
 
-  // const responseCatalog = await fetch("http://35.157.165.146:8000/api/catalog");
+  const responseVideo = await fetch(
+    "https://ellie-web-api-dev.elliesupport.com/api/videos"
+  );
+
+  const responsePartnership = await fetch(
+    "https://ellie-web-api-dev.elliesupport.com/api/partnerships/"
+  );
+
+  // const responseCatalog = await fetch("https://ellie-web-api-dev.elliesupport.com/api/catalog");
 
   const iconsData = await responseIcon.json();
   const videosData = await responseVideo.json();
