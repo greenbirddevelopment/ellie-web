@@ -4,18 +4,18 @@ import { Lato_700 } from "../layout";
 
 const Arge = ({ argeIcons }) => (
   <section id="arge" className="mb-32 pt-16">
-    <section className="mb-20">
+    <section className="mb-16">
       <h1
         className={`text-3xl lg:text-4xl text-primary drop-shadow mb-4 ${Lato_700.className}`}
       >
         Arge: Developing A Smart Home System
       </h1>
-      <p className="text-gray-400 text-justify mb-2">
+      <p className="text-gray-400 text-justify mb-4">
         At Ellie Smart Home Systems, our ARGE (Applied Research and Development)
         department plays a crucial role in driving innovation and pushing the
         boundaries of smart home technology.
       </p>
-      <p className="text-gray-400 text-justify mb-2">
+      <p className="text-gray-400 text-justify mb-4">
         Through rigorous research and development efforts, we continuously
         explore new avenues to enhance the functionality, efficiency, and user
         experience of our smart home solutions. Our ARGE team collaborates
@@ -42,7 +42,7 @@ const Arge = ({ argeIcons }) => (
               duration: 0.5,
               delay: index * 0.1,
             }}
-            className="flex items-start mb-24 last:mb-0 gap-6"
+            className="flex items-start mb-20 last:mb-0 gap-6"
             key={argeICon.name}
           >
             <Image

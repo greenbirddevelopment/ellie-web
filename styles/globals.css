@@ -29,6 +29,20 @@ body {
   justify-content: flex-end;
 }
 
+/* styles.css */
+.accordion-item {
+  border: 1px solid #dee2e6;
+}
+
+.accordion-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.accordion-body {
+  padding: 15px;
+}
+
 @media screen and (max-width: 768px) {
   body {
     background: linear-gradient(to bottom, rgb(var(--color-linear-gradient-from)) 70vh, rgb(var(--color-linear-gradient-to))) !important;

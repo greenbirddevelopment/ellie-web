@@ -2,6 +2,7 @@ import Container from "@/components/Container";
 import AboutUs from "@/components/about/AboutUs";
 import AboutEllie from "@/components/about/about-ellie/AboutEllie";
 import Arge from "@/components/arge/Arge";
+import FAQ from "@/components/faq/FAQ";
 import Jumbotron from "@/components/jumbotron/Jumbotron";
 import Partnerships from "@/components/partnerships/Partnershiphs";
 import Products from "@/components/products/Products";
@@ -31,6 +32,7 @@ export default function Home({ icons, videos, partnerships }) {
         <Products productIcons={productIcons} />
         <Arge argeIcons={argeIcons} />
         <AboutUs />
+        <FAQ />
         <Partnerships partnerships={partnerships} />
       </Container>
     </>
