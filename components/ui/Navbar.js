@@ -22,13 +22,14 @@ const Navbar = ({ icons }) => {
 
     { title: "About Us", name: "about-us", href: "#about-us" },
 
-    {
-      title: "Academy",
-      name: "academy",
-      href: "#academy",
-    },
+    // {
+    //   title: "Academy",
+    //   name: "academy",
+    //   href: "#academy",
+    // },
 
     { title: "Partnerships", name: "partnerships", href: "#partnerships" },
+    { title: "FAQ", name: "faq", href: "#faq" },
     { title: "Contact", name: "contact", href: "#contact" },
   ];
 
