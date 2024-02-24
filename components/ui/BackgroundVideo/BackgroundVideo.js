@@ -11,8 +11,9 @@ const BackgroundVideo = ({ backgroundVideo }) => {
           id="video"
           className="absolute w-full h-full object-cover"
           controls={false}
-          autoPlay={true}
-          loop={true}
+          autoPlay
+          loop
+          muted
           onLoad={() => {
             document.getElementById("video").removeAttribute("controls");
             document.getElementById("video").setAttribute("autoPlay", true);

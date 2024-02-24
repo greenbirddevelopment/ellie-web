@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  videos: {
+    autoPlay: true,
+  },
   images: {
     remotePatterns: [
       {
