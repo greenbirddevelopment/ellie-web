@@ -9,8 +9,6 @@ import Sidebar from "./Sidebar";
 import { Lato_700 } from "../layout";
 
 const Navbar = ({ icons }) => {
-  console.log(icons);
-
   const LINKS = [
     { title: "Products", name: "products", href: "#products" },
 
@@ -28,8 +26,8 @@ const Navbar = ({ icons }) => {
     //   href: "#academy",
     // },
 
-    { title: "Partnerships", name: "partnerships", href: "#partnerships" },
     { title: "FAQ", name: "faq", href: "#faq" },
+    { title: "Partnerships", name: "partnerships", href: "#partnerships" },
     { title: "Contact", name: "contact", href: "#contact" },
   ];
 
