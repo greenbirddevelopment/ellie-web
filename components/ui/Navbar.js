@@ -20,13 +20,14 @@ const Navbar = ({ icons }) => {
       href: "#arge",
     },
 
+    { title: "About Us", name: "about-us", href: "#about-us" },
+
     {
       title: "Academy",
       name: "academy",
       href: "#academy",
     },
 
-    { title: "About us", name: "about-us", href: "#about" },
     { title: "Partnerships", name: "partnerships", href: "#partnerships" },
     { title: "Contact", name: "contact", href: "#contact" },
   ];

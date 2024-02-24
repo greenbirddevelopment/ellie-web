@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import AboutUs from "@/components/about/AboutUs";
 import AboutEllie from "@/components/about/about-ellie/AboutEllie";
 import Arge from "@/components/arge/Arge";
 import Jumbotron from "@/components/jumbotron/Jumbotron";
@@ -7,8 +8,6 @@ import Products from "@/components/products/Products";
 import BackgroundVideo from "@/components/ui/BackgroundVideo/BackgroundVideo";
 
 export default function Home({ icons, videos, partnerships }) {
-  console.log(icons);
-
   const headerIcon = icons.filter((icon) => icon.type === "header").at(0);
   const productIcons = icons.filter((icon) => icon.type === "product");
   const watermarkIcon = icons.filter((icon) => icon.type === "watermark").at(0);
@@ -31,6 +30,7 @@ export default function Home({ icons, videos, partnerships }) {
         <AboutEllie watermarkIcon={watermarkIcon} infoIcons={infoIcons} />
         <Products productIcons={productIcons} />
         <Arge argeIcons={argeIcons} />
+        <AboutUs />
         <Partnerships partnerships={partnerships} />
       </Container>
     </>
