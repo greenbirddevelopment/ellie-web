@@ -2,11 +2,11 @@ import { Lato_700 } from "../layout";
 
 const AboutUs = () => (
   <section id="about-us" className="mb-32 pt-16">
-    <section className="mb-12">
+    <section className="mb-20">
       <h1
         className={`text-3xl lg:text-4xl text-primary drop-shadow mb-4 ${Lato_700.className}`}
       >
-        Our mission
+        Our Mission
       </h1>
       <p className="text-justify">
         At Ellie Smart Home Systems, our mission is to empower individuals and
