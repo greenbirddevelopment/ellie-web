@@ -13,6 +13,7 @@ export default function Home({ icons, videos, partnerships }) {
   const productIcons = icons.filter((icon) => icon.type === "product");
   const watermarkIcon = icons.filter((icon) => icon.type === "watermark").at(0);
   const infoIcons = icons.filter((icon) => icon.type === "info");
+  const argeIcons = icons.filter((icon) => icon.type === "arge");
 
   const backgroundVideo = videos
     .filter((video) => video.name === "background")
@@ -29,7 +30,7 @@ export default function Home({ icons, videos, partnerships }) {
       <Container>
         <AboutEllie watermarkIcon={watermarkIcon} infoIcons={infoIcons} />
         <Products productIcons={productIcons} />
-        <Arge />
+        <Arge argeIcons={argeIcons} />
         <Partnerships partnerships={partnerships} />
       </Container>
     </>
