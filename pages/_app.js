@@ -18,10 +18,9 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="keywords"
-          // content="Ellie, ellie, ellie smart home, ellie smart home assistant, smart hue, smart light, hue, philips, sensibo"
-          content="smart home, smart home systems, smart home assistant, ellie smart home, ellie smart home systems, ellie smart home assistant, ellie, smart devices"
+          content="smart home, smart home systems, smart home assistant, ellie smart home, ellie smart home systems, ellie smart home assistant, ellie, ellie smart, smart devices"
         />
-        <title>Ellie Smart Home Assistant | Manage your Home</title>
+        <title>Ellie Smart Home Systems | Manage Your Smart Home</title>
       </Head>
       <QueryClientProvider client={queryClient}>
         <Layout>
