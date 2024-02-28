@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://elliesmarthome.com/
+
+# Sitemaps
+Sitemap: https://elliesmarthome.com/sitemap.xml
