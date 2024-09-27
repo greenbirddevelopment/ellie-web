@@ -86,14 +86,15 @@ const Jumbotron = ({ headerIcon }) => {
           typeof window !== "undefined" ? { scale, opacity } : { opacity: 0 }
         }
       >
-        <Image
+        {/* <Image
           src={headerIcon.source}
           width={headerIcon.size.width}
           height={headerIcon.size.height}
           className="w-full mx-auto"
           alt={headerIcon.title}
           priority
-        />
+        /> */}
+        <Image src={"/main_icons.svg"} width={664} height={665} />
       </motion.div>
     </section>
   );
