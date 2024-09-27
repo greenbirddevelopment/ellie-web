@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Button from "../ui/Button";
 import Link from "next/link";
 
-const Products = ({ productIcons }) => (
+const Products = ({}) => (
   <section id="products" className="mb-32 pt-16">
     <section className="mb-20">
       <h1
@@ -22,7 +22,7 @@ const Products = ({ productIcons }) => (
     </section>
     <section className="mb-20">
       <ul className="grid grid-cols-12 gap-6">
-        {productIcons.map((productIcon, index) => (
+        {/* {productIcons.map((productIcon, index) => (
           <motion.li
             style={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ const Products = ({ productIcons }) => (
               </div>
             </section>
           </motion.li>
-        ))}
+        ))} */}
       </ul>
     </section>
     <section className="text-gray-400 mb-14">
@@ -64,7 +64,7 @@ const Products = ({ productIcons }) => (
         transition={{
           ease: "easeOut",
           duration: 0.5,
-          delay: productIcons.length * 0.2,
+          // delay: productIcons.length * 0.2,
         }}
       >
         <strong>With Ellie Smart Home</strong>, enjoy the peace of mind that

@@ -2,7 +2,7 @@ import { Lato_700 } from "@/components/layout";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const AboutEllie = ({ watermarkIcon, infoIcons }) => {
+const AboutEllie = ({}) => {
   return (
     <section id="about-ellie" className="mb-32 pt-16">
       <section className="grid grid-cols-12">
@@ -16,17 +16,18 @@ const AboutEllie = ({ watermarkIcon, infoIcons }) => {
               duration: 0.5,
             }}
           >
-            <Image
+            {/* <Image
               src={watermarkIcon.source}
               width={watermarkIcon.size.width}
               height={watermarkIcon.size.height}
               className="w-11/12 lg:w-full mx-auto mb-24 lg:mb-0"
               alt={watermarkIcon.name}
-            />
+            /> */}
+            <Image src={"/smart_home.png"} width={960} height={843} />
           </motion.div>
           <section className="block lg:hidden">
             <ul className="grid grid-cols-12 gap-6">
-              {infoIcons.map((infoIcon, index) => (
+              {/* {infoIcons.map((infoIcon, index) => (
                 <motion.li
                   style={{ opacity: 0, y: 100 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -55,7 +56,7 @@ const AboutEllie = ({ watermarkIcon, infoIcons }) => {
                     </h1>
                   </section>
                 </motion.li>
-              ))}
+              ))} */}
             </ul>
           </section>
         </div>
@@ -77,7 +78,7 @@ const AboutEllie = ({ watermarkIcon, infoIcons }) => {
             </section>
             <section className="hidden lg:block">
               <ul className="grid grid-cols-12 gap-6">
-                {infoIcons.map((infoIcon, index) => (
+                {/* {infoIcons.map((infoIcon, index) => (
                   <motion.li
                     style={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -106,7 +107,7 @@ const AboutEllie = ({ watermarkIcon, infoIcons }) => {
                       </h1>
                     </section>
                   </motion.li>
-                ))}
+                ))} */}
               </ul>
             </section>
           </div>

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Lato_700 } from "../layout";
 
-const Partnerships = ({ partnerships }) => {
+const Partnerships = ({}) => {
   return (
     <section id="partnerships" className="pt-16">
       <section className="mb-12">
@@ -18,7 +18,7 @@ const Partnerships = ({ partnerships }) => {
         </p>
       </section>
       <section className="flex flex-wrap justify-center gap-12 lg:gap-6">
-        {partnerships.map((partnership) => (
+        {/* {partnerships.map((partnership) => (
           <Image
             src={partnership.logo.source}
             width={partnership.logo.size.width}
@@ -27,7 +27,55 @@ const Partnerships = ({ partnerships }) => {
             alt={partnership.name}
             key={partnership.name}
           />
-        ))}
+        ))} */}
+        <Image
+          src={"/partnerships/google_nest_logo.png"}
+          width={344}
+          height={120}
+          className="w-24 lg:w-32"
+        />
+        <Image
+          src={"/partnerships/tado_logo.png"}
+          width={416}
+          height={120}
+          className="w-24 lg:w-32"
+        />
+        <Image
+          src={"/partnerships/yale_logo.png"}
+          width={344}
+          height={120}
+          className="w-24 lg:w-32"
+        />
+        <Image
+          src={"/partnerships/igloohome_logo.png"}
+          width={303}
+          height={120}
+          className="w-24 lg:w-32"
+        />
+        <Image
+          src={"/partnerships/nuki_logo.png"}
+          width={344}
+          height={120}
+          className="w-24 lg:w-32"
+        />
+        <Image
+          src={"/partnerships/sensibo_logo.png"}
+          width={269}
+          height={120}
+          className="w-24 lg:w-32"
+        />
+        <Image
+          src={"/partnerships/ecobee_logo.png"}
+          width={441}
+          height={120}
+          className="w-24 lg:w-32"
+        />
+        <Image
+          src={"/partnerships/sonoff_logo.png"}
+          width={406}
+          height={120}
+          className="w-24 lg:w-32"
+        />
       </section>
     </section>
   );

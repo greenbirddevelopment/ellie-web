@@ -2,7 +2,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Lato_700 } from "../layout";
 
-const Arge = ({ argeIcons }) => (
+const Arge = ({}) => (
   <section id="arge" className="mb-32 pt-16">
     <section className="mb-16">
       <h1
@@ -32,7 +32,7 @@ const Arge = ({ argeIcons }) => (
     </section>
     <section>
       <ul>
-        {argeIcons.map((argeICon, index) => (
+        {/* {argeIcons.map((argeICon, index) => (
           <motion.li
             style={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ const Arge = ({ argeIcons }) => (
               <p className="text-gray-400 text-justify">{argeICon.paragraph}</p>
             </section>
           </motion.li>
-        ))}
+        ))} */}
       </ul>
     </section>
   </section>

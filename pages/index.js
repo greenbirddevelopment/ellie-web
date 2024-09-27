@@ -8,7 +8,7 @@ import Partnerships from "@/components/partnerships/Partnershiphs";
 import Products from "@/components/products/Products";
 import BackgroundVideo from "@/components/ui/BackgroundVideo/BackgroundVideo";
 
-export default function Home({ icons, videos, partnerships }) {
+export default function Home({}) {
   // const headerIcon = icons.filter((icon) => icon.type === "header").at(0);
   // const productIcons = icons.filter((icon) => icon.type === "product");
   // const watermarkIcon = icons.filter((icon) => icon.type === "watermark").at(0);
@@ -21,34 +21,34 @@ export default function Home({ icons, videos, partnerships }) {
 
   return (
     <>
-      {/* <header className="lg:mb-64">
-        <BackgroundVideo backgroundVideo={backgroundVideo} />
+      <header className="lg:mb-64">
+        {/* <BackgroundVideo backgroundVideo={backgroundVideo} /> */}
         <Container>
-          <Jumbotron headerIcon={headerIcon} />
+          <Jumbotron />
         </Container>
       </header>
       <Container>
-        <AboutEllie watermarkIcon={watermarkIcon} infoIcons={infoIcons} />
-        <Products productIcons={productIcons} />
-        <Arge argeIcons={argeIcons} />
+        <AboutEllie />
+        <Products />
+        <Arge />
         <AboutUs />
         <FAQ />
-        <Partnerships partnerships={partnerships} />
-      </Container> */}
+        <Partnerships />
+      </Container>
     </>
   );
 }
 
 // export async function getServerSideProps() {
-//   const responseIcon = await fetch("http://35.157.165.146:8000/api/icons");
+//   const responseIcon = await fetch("http://34.253.241.176/api/icons");
 
-//   const responseVideo = await fetch("http://35.157.165.146:8000/api/videos");
+//   const responseVideo = await fetch("http://34.253.241.176/api/videos");
 
 //   const responsePartnership = await fetch(
-//     "http://35.157.165.146:8000/api/partnerships/"
+//     "http://34.253.241.176/api/partnerships/"
 //   );
 
-//   // const responseCatalog = await fetch("http://35.157.165.146:8000/api/catalog");
+//   // const responseCatalog = await fetch("http://34.253.241.176/api/catalog");
 
 //   const iconsData = await responseIcon.json();
 //   const videosData = await responseVideo.json();
